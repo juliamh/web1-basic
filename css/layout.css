@@ -1,12 +1,80 @@
 
-.container {
-	margin-top: 1em;
-	margin-right: auto;
-	margin-bottom: 1em;
-	margin-left: auto;
-	width: 90%;
-	max-width: 800px;
-	padding: 2em;
-	border: 1px solid #eee;
+
+
+
+#gradient {
+	/*fallback color*/
+	background-color: #8e9ebc;
+	
+	/*fallback color*/
+	background-image:url("img/gradient.png");
+	
+	/*Firefox 3.6+*/
+	background-image: -moz-linear-gradient (#00002e, #8e9ebc);
+	
+	/*Safari 4+, Chrome 1+*/
+	background-image: webkit-gradient (linear, 0% 0%, 0% 100%, from (#8e9ebc) to (#00002e));
+	
+	/*Safari 5.1+, Chrome 10+*/
+	background-image: -webkit-linear-gradient (#8e9ebc, #00002e); 
+	
+	/*Opera 11.10+*/
+	background-image: -o-linear-gradient (#8e9ebc, #00002e);
+	}
+	
+html {
+	height: 100%;
+	}
+		
+body {
+	height: 100%;
+	background: #00002e; /* Old browsers */
+	background: -moz-linear-gradient(top, #00002e 23%, #8e9ebc 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(23%,#00002e), color-stop(99%,#8e9ebc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00002e 23%,#8e9ebc 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00002e 23%,#8e9ebc 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00002e 23%,#8e9ebc 99%); /* IE10+ */
+	background: linear-gradient(to bottom, #00002e 23%,#8e9ebc 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00002e', endColorstr='#8e9ebc',GradientType=0 ); /* IE6-9 */
 }
 
+
+nav ul {
+	margin-left: 20%;
+	margin-top: 100px;
+	}
+	
+	
+a {
+	float: left;
+	padding: 2em;
+	}
+
+.banner {
+	margin-top: 5%;
+	width: 100%
+	} 
+
+
+h1 {
+	text-align: center;
+	}
+
+nav {
+	background-image: url('../img/jackie-banner.png');
+	height: 250px;
+	}
+
+
+.title {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%
+	}
+	
+.skyline {
+	position: fixed; 
+	bottom: 0;
+	width: 100%
+	}
